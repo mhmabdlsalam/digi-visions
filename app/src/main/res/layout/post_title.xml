@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.arrows.digivisions.model.PostModel" />
+
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@{model.title}"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
